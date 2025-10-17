@@ -2,8 +2,8 @@
 
 ## ✅ Project Status: FULLY COMPLETED
 
-**Reinforcement Learning Course 2024-25**  
-**Università degli Studi di Milano**  
+**Reinforcement Learning Course**  
+****  
 **Focus: Policy Gradient Methods**
 
 ---
@@ -364,16 +364,3 @@ The project provides a solid foundation for understanding policy gradient method
 
 ---
 
-## 👥 Credits
-
-**Course**: Reinforcement Learning  
-**Instructors**: Prof. Nicolò Cesa-Bianchi, Prof. Alfio Ferrara  
-**Assistants**: Elisabetta Rocchetti, Luigi Foscari  
-**Institution**: Università degli Studi di Milano  
-**Academic Year**: 2024-25
-
----
-
-**Made with ❤️ for Reinforcement Learning**
-
-*Last Updated: 2024*

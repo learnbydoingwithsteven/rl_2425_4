@@ -18,7 +18,6 @@ from environment import DiceExplorationEnv
 from agents import REINFORCEAgent, ActorCriticAgent, QLearningAgent
 from training import Trainer
 
-
 # Page configuration
 st.set_page_config(
     page_title="Push Your Luck! - RL Project 4",
@@ -58,7 +57,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-
 def load_training_results() -> Dict[str, Dict]:
     """Load all training results from JSON files."""
     results = {}
@@ -81,7 +79,6 @@ def load_training_results() -> Dict[str, Dict]:
                 results[name] = json.load(f)
     
     return results
-
 
 def plot_training_curves(results: Dict[str, Dict]):
     """Plot training curves for all agents."""
@@ -176,7 +173,6 @@ def plot_training_curves(results: Dict[str, Dict]):
     
     return fig
 
-
 def plot_performance_comparison(results: Dict[str, Dict]):
     """Plot performance comparison across agents."""
     agent_names = list(results.keys())
@@ -218,7 +214,6 @@ def plot_performance_comparison(results: Dict[str, Dict]):
     
     return fig
 
-
 def plot_baseline_effect(results: Dict[str, Dict]):
     """Plot effect of baseline on REINFORCE."""
     if "REINFORCE (no baseline)" not in results or "REINFORCE (baseline)" not in results:
@@ -258,7 +253,6 @@ def plot_baseline_effect(results: Dict[str, Dict]):
     )
     
     return fig
-
 
 def simulate_episode(env: DiceExplorationEnv, agent, agent_type: str) -> List[Dict]:
     """Simulate one episode and return step-by-step information."""
@@ -305,7 +299,6 @@ def simulate_episode(env: DiceExplorationEnv, agent, agent_type: str) -> List[Di
     
     return episode_data
 
-
 def main():
     """Main Streamlit app."""
     
@@ -329,7 +322,6 @@ def main():
         show_analysis()
     else:
         show_about()
-
 
 def show_training_dashboard():
     """Show training dashboard with results."""
@@ -417,7 +409,6 @@ def show_training_dashboard():
             - Typically implemented as running average of returns
             - Compare the smoothness and final performance of both curves
             """)
-
 
 def show_interactive_demo():
     """Show interactive demo of trained agents."""
@@ -509,7 +500,6 @@ def show_interactive_demo():
                     if 'outcomes' in step['info']:
                         st.write(f"Outcomes: {step['info']['outcomes']}")
 
-
 def show_analysis():
     """Show detailed analysis."""
     st.markdown('<div class="sub-header">Detailed Analysis</div>', unsafe_allow_html=True)
@@ -587,7 +577,6 @@ def show_analysis():
     )
     st.plotly_chart(fig_progress, use_container_width=True)
 
-
 def show_about():
     """Show project information."""
     st.markdown('<div class="sub-header">About This Project</div>', unsafe_allow_html=True)
@@ -654,13 +643,6 @@ def show_about():
     - **Neural Networks**: PyTorch for policy and value approximation
     - **Visualization**: Streamlit + Plotly for interactive dashboard
     
-    ### 📚 Course Information
-    - **Course**: Reinforcement Learning
-    - **Instructors**: Prof. Nicolò Cesa-Bianchi, Prof. Alfio Ferrara
-    - **Institution**: Università degli Studi di Milano
-    - **Program**: Data Science and Economics Master Degree
-    - **Academic Year**: 2024-25
-    
     ### 🎓 Learning Objectives
     1. Understand policy gradient methods and their advantages
     2. Implement REINFORCE and Actor-Critic algorithms
@@ -672,7 +654,6 @@ def show_about():
     
     **Made with ❤️ for Reinforcement Learning**
     """)
-
 
 if __name__ == "__main__":
     main()

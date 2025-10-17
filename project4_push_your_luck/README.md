@@ -1,8 +1,7 @@
 # 🎲 Push Your Luck! - Space Exploration Dice Game
 
 **Project 4: Policy Gradient Methods**  
-Reinforcement Learning Course 2024-25  
-Università degli Studi di Milano
+Reinforcement Learning Course  
 
 ---
 
@@ -345,19 +344,7 @@ This is an academic project. For improvements or bug fixes:
 ## 📝 License
 
 Academic project for educational purposes.  
-Università degli Studi di Milano - 2024-25
-
----
-
-## 👥 Authors
-
-**Course Instructors**:
-- Prof. Nicolò Cesa-Bianchi
-- Prof. Alfio Ferrara
-
-**Course Assistants**:
-- Elisabetta Rocchetti (PhD student)
-- Luigi Foscari (PhD student)
+ - 2024-25
 
 ---
 

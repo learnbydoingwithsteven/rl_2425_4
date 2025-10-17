@@ -355,4 +355,4 @@ Ready for presentation and submission.
 ---
 
 **Made with ❤️ for Reinforcement Learning**  
-**Università degli Studi di Milano - 2024-25**
+** - 2024-25**
